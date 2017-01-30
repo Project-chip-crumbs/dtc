@@ -1,0 +1,11 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: dtc
+Source: https://github.com/nextthingco/
+
+Files: *
+Copyright: 2007 David Gibson <david@gibson.dropbear.id.au>
+License: GPL-3.0+
+
+Files: debian/*
+Copyright: 2017 Ben Young <software@nextthing.co>
+License: GPL-3.0+

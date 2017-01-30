@@ -1,0 +1,15 @@
+Source: dtc
+Section: unknown
+Priority: optional
+Maintainer: Ben Young <software@nextthing.co>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: https://github.com/nextthingco/dtc
+
+Package: dtc
+Architecture: armhf
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: The Device Tree Compiler (dtc) toolchain
+ The source tree contains the Device Tree Compiler (dtc) toolchain for
+ working with device tree source and binary files and also libfdt, a
+ utility library for reading and manipulating the binary format.
