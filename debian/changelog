@@ -1,8 +1,8 @@
-device-tree-compiler (1.4.0+ntc-1) jessie; urgency=medium
+device-tree-compiler (1.4.1+ntc-1) jessie; urgency=medium
 
   * Rebuild for CHIP.
 
- -- Ben Young <software@nextthing.co>
+ -- Ben Young <software@nextthing.co>  Sun, 29 Jan 2017 19:20:41 -0800
 
 device-tree-compiler (1.4.0+dfsg-2~bpo8+1) jessie-backports; urgency=medium
 
