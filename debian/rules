@@ -23,7 +23,6 @@ build-stamp:
 	dh_testdir
 	QUILT_PATCHES=debian/patches quilt push -a || test $$? = 2
 	$(MAKE) CFLAGS="$(CFLAGS)"
-	$(MAKE) -C Documentation
 	touch build-stamp
 
 clean: clean1
@@ -32,7 +31,6 @@ clean1:
 	dh_testroot
 	rm -f build-stamp install-stamp
 	$(MAKE) clean
-	[ ! -f Documentation/Makefile ] || $(MAKE) -C Documentation clean
 	QUILT_PATCHES=debian/patches quilt pop -a -R || test $$? = 2
 	rm -rf .pc
 	dh_clean
@@ -54,8 +52,6 @@ binary-arch: build install
 	dh_testdir
 	dh_testroot
 	dh_installchangelogs
-	dh_installdocs Documentation/dtc-paper.dvi Documentation/dtc-paper.ps \
-		Documentation/dtc-paper.pdf Documentation/dtc-manual.txt
 	dh_installexamples
 	dh_installman debian/manpages/*
 	dh_link
